@@ -1,0 +1,110 @@
+.LandingPage{
+  position: relative;
+  background-image: url(../../assets/images/landingpageImage.png);
+  background-size: cover;
+  background-position: center;
+  border-image: fill 1 linear-gradient(hsl(224, 42%, 10%, 80%), hsl(224, 42%, 10%, 80%));
+}
+
+.LandingPage .buttonsContainer{
+  padding-right: 4.6121vw;
+  margin-top: 71.5px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.LandingPage .buttonsContainer .buttons{
+  height: 43px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 220px;
+  width: 100%;
+}
+
+.LandingPage .buttonsContainer .buttons button{
+  border-radius: 18px;
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
+  max-width: 100px;
+  width: 100%;
+  font-family: "Overlock", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.LandingPage .buttonsContainer .buttons button:nth-child(1){
+  background-color: #00ADB5;
+  border: none;
+  transition: background-color .15s linear;
+}
+
+.LandingPage .buttonsContainer .buttons button:nth-child(1):hover{
+  background-color: hsl(183, 100%, 30%);
+}
+
+.LandingPage .buttonsContainer .buttons button:nth-child(2){
+  background-color: transparent;
+  border: 1.8px solid #00ADB5;
+  transition: background-color .15s linear, border .15s linear;
+}
+
+.LandingPage .buttonsContainer .buttons button:nth-child(2):hover{
+  background-color: hsla(0, 0%, 0%, 20%);
+  border: 1.8px solid hsl(183, 100%, 30%);
+}
+
+.LandingPage .text{
+  position: relative;
+  margin: 70px 0 0 11.6355vw;
+  color: #eeeeee;
+  max-width: 1064px;
+}
+
+.LandingPage .text .Title{
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  font-size: 58px;
+  max-width: 680px;
+}
+
+.LandingPage .text .line{
+  background-color: #eeeeee;
+  height: 5.4px;
+  max-width: 400px;
+  margin: 32px 0 39px 0;
+}
+
+.LandingPage .text .description{
+  font-size: 36px;
+  font-family: "Overlock", sans-serif;
+}
+
+.LandingPage .text .description span{
+  font-weight: 700;
+}
+
+.right{
+  text-align: right;
+  padding: 20px 20px 0 0;
+}
+
+.LandingPage .text button{
+  height: 63px;
+  max-width: 211px;
+  width: 100%;
+  font-size: 31.5px;
+  background-color: #00ADB5;
+  border: none;
+  border-radius: 18px;
+  color: #eeeeee;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .15s linear;
+}
+
+.LandingPage .text button:hover{
+  background-color: hsl(183, 100%, 30%);
+}

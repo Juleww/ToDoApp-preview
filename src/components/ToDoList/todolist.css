@@ -1,0 +1,79 @@
+:root{
+  --primaryFont: "Exo", sans-serif;
+  --secondaryFont: "Work Sans", sans-serif;
+  --tertiaryFont: "Proza Libre", sans-serif;
+}
+
+.toDoList{
+  position: relative;
+  background-color: #eee;
+}
+
+.notifications{
+  position: relative;
+  box-sizing: content-box;
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5887vw;
+  padding: 50px 50px 25px 0;
+}
+
+.notifications .notifIcon{
+  background-image: url(../../assets/icons/notifications.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 64%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transform-origin: 50% 0;
+  transition: transform 0.1s linear;
+}
+
+.notifications .avatarIcon{
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url(../../assets/images/avatar.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.notifications .avatarIcon .blur{
+  transition: .3s linear;
+  border-radius: 50%;
+}
+
+.notifications .avatarIcon:hover .blur{
+  height: 100%;
+  width: 100%;
+  background-color: #0F1525;
+  opacity: 0.4;
+}
+
+.notifications .notifIcon:hover {
+  transform: rotate(10deg);
+}
+
+.tasksContainer{
+  max-width: 1330px;
+  /* height: fit-content; */
+  /* background-color: rgb(185, 185, 185); */
+  margin-left: min(7.4766vw, 15.625vh);
+}
+
+.myTasks{
+  font-size: 36px;
+  font-family: var(--primaryFont);
+  font-weight: 900;
+}
+
+
+.filterContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}

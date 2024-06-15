@@ -1,0 +1,293 @@
+.Navbar{
+  position: relative;
+  background-color: #222831;
+}
+
+.Navbar .line{
+  background-color: #393E46;
+  height: 3px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 2vw;
+}
+
+.LogoContainer{
+  height: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoContainer .Logo{
+  height: 81.5px;
+  width: 73px;
+  background-image: url(../../assets/icons/Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+nav{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .IconContainer{
+  position: relative;
+  height: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+nav .IconContainer:hover{
+  background-color: hsl(216, 18%, 14%);
+} 
+
+.IconContainer .NavIcon{
+  position: relative;
+  height: 50px;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav .Icon1{
+  background-image: url(../../assets/icons/listIcon.svg);
+}
+nav .Icon2{
+  background-image: url(../../assets/icons/calendarIcon.svg);
+}
+nav .Icon3{
+  background-image: url(../../assets/icons/statsIcon.svg);
+}
+nav .Icon4{
+  background-image: url(../../assets/icons/mailIcon.svg);
+}
+nav .Icon5{
+  background-image: url(../../assets/icons/accountIcon.svg);
+}
+
+.SettingsBox{
+  height: 11%;
+  display: flex;
+  align-items: center;
+}
+
+.SettingsContainer{
+  position: relative;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.SettingsContainer:hover{
+  background-color: hsl(216, 18%, 14%);
+}
+
+.SettingsContainer .Settings{
+  height: 41px;
+  width: 41px;
+  background-image: url(../../assets/icons/settingsIcon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform .6s ease-in-out;
+}
+
+.CurrentPageSettings .Settings{
+  background-image: url(../../assets/icons/settingsIcon1.svg);
+  transform: rotate(180deg);
+}
+
+.CurrentPage::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(166, 100%, 50%, 10%);
+
+
+  animation: slide-in .15s linear forwards;
+}
+
+@keyframes slide-in{
+  to{
+    left: 0;
+  }
+}
+
+.CurrentPage::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #00ADB5;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+/* .Navbar{
+  background-color: #222831;
+  flex-basis: 10%;
+  border-top-left-radius: min(2.3364vw, 4.8828vh);
+  border-bottom-left-radius: min(2.3364vw, 4.8828vh);
+  overflow: hidden;
+}
+
+.Navbar .line{
+  background-color: #393E46;
+  height: 0.2929vh;
+  width: 6.6355vw;
+  margin: auto;
+  border-radius: 2vw;
+}
+
+.LogoContainer{
+  height: 18.9979%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoContainer .Logo{
+  height: 46.1538%;
+  width: 38%;
+  background-image: url(../../assets/Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+nav{
+  height: 67.6409%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .IconContainer{
+  position: relative;
+  width: 9.3457vw;
+  height: 10.2539vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+nav .IconContainer:hover{
+  background-color: hsl(216, 18%, 14%);
+} 
+
+.IconContainer .NavIcon{
+  position: relative;
+  width: 2.6168vw;
+  height: 5.4687vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav .Icon1{
+  background-image: url(../../assets/listIcon.svg);
+}
+nav .Icon2{
+  background-image: url(../../assets/calendarIcon.svg);
+}
+nav .Icon3{
+  background-image: url(../../assets/statsIcon.svg);
+}
+nav .Icon4{
+  background-image: url(../../assets/mailIcon.svg);
+}
+nav .Icon5{
+  background-image: url(../../assets/accountIcon.svg);
+}
+
+.SettingsBox{
+  height: 11.9140vh;
+  display: flex;
+  align-items: center;
+}
+
+.SettingsContainer{
+  flex-grow: 1;
+  position: relative;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.SettingsContainer:hover{
+  background-color: hsl(216, 18%, 14%);
+}
+
+.SettingsContainer .Settings{
+  height: 4.4921vh;
+  width: 2.1495vw;
+  background-image: url(../../assets/settingsIcon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform .6s ease-in-out;
+}
+
+.CurrentPageSettings .Settings{
+  background-image: url(../../assets/settingsIcon1.svg);
+  transform: rotate(180deg);
+}
+
+.CurrentPage::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(166, 100%, 50%, 10%);
+
+
+  animation: slide-in .15s linear forwards;
+}
+
+@keyframes slide-in{
+  to{
+    left: 0;
+  }
+}
+
+.CurrentPage::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #00ADB5;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+} */
